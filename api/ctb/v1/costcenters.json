@@ -1,0 +1,43 @@
+{
+	"hasNext": false,
+	"items": [
+		{
+			"CompanyId": "T1",
+			"BranchId": "D MG 01",
+			"CompanyInternalId": "T1D MG 01 000000001",
+			"Id": "1|01.7",
+			"Code": "000000001",
+			"InternalId": "D MG 01 000000001",
+			"RegisterSituation": "2",
+			"Name": "Centro de Custo",
+			"ShortCode": "C001",
+			"SPED": "",
+			"AllowEntry": "",
+			"Class": "1",
+			"TopCode": "000000001",
+			"CreateDate": "",
+			"Accountable": "",
+			"recordCreatedOn": "2024-02-23T13:40:00Z",
+			"recordModifiedOn": "2024-02-23T13:40:00Z"
+		},
+		{
+			"CompanyId": "T2",
+			"BranchId": "D SP 02",
+			"CompanyInternalId": "T2D SP 02 000000002",
+			"Id": "2|02.8",
+			"Code": "000000002",
+			"InternalId": "D SP 02 000000002",
+			"RegisterSituation": "1",
+			"Name": "Expense Center",
+			"ShortCode": "E002",
+			"SPED": "",
+			"AllowEntry": "",
+			"Class": "2",
+			"TopCode": "000000002",
+			"CreateDate": "",
+			"Accountable": "",
+			"recordCreatedOn": "2024-02-23T13:45:00Z",
+			"recordModifiedOn": "2024-02-23T13:45:00Z"
+		}
+	]
+}

@@ -1,0 +1,17 @@
+{
+	"hasNext": false,
+	"items": [
+		{
+			"branchCode": "D MG 01",
+			"branchDescription": "Belo Horizonte"
+		},
+		{
+			"branchCode": "D SP 02",
+			"branchDescription": "São Paulo"
+		},
+		{
+			"branchCode": "D RJ 03",
+			"branchDescription": "Rio de Janeiro"
+		}
+	]
+}
