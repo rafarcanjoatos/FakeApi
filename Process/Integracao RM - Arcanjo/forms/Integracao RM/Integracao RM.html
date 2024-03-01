@@ -1,0 +1,407 @@
+<html>
+<head>
+	<link type="text/css" rel="stylesheet" href="/style-guide/css/fluig-style-guide.min.css"/>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/jquery/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="/portal/resources/js/mustache/mustache-min.js"></script>
+	<script type="text/javascript" src="/style-guide/js/fluig-style-guide.min.js" charset="utf-8"></script>
+</head>
+<body>
+<div class="fluig-style-guide">
+<form name="form" role="form">
+
+	<label for="EsocialBranches"> Dados da Empresa </label><br>
+	<input
+	type="zoom"
+	id="EsocialBranches"
+	name="EsocialBranches"
+	data-zoom="{
+	    'displayKey':'branchCode',
+	    'datasetId':'EsocialBranches',
+	    'maximumSelectionLength':'1',
+	    'placeholder':'Escolha a empresa',
+	    'fields':[
+	        {
+	           'field':'branchCode',
+	           'label':'ID'
+	        },{
+	          'field':'branchDescription',
+	          'label':'Município'
+	        }
+	    ]
+	 }"
+	/>
+	
+	
+	<label for="costCenters"> Centro de Custo </label><br>
+	<input
+	type="zoom"
+	id="costCenters"
+	name="costCenters"
+	data-zoom="{
+	    'displayKey':'CompanyId',
+	    'datasetId':'costCenters',
+	    'maximumSelectionLength':'1',
+	    'placeholder':'Escolha o Centro de Custo',
+	    'fields':[
+			{
+			  'field': 'CompanyId',
+			  'label': 'CompanyId'
+			},{
+			  'field': 'BranchId',
+			  'label': 'BranchId'
+			},{
+			  'field': 'CompanyInternalId',
+			  'label': 'CompanyInternalId'
+			},{
+			  'field': 'Id',
+			  'label': 'Id'
+			},{
+			  'field': 'Code',
+			  'label': 'Code'
+			},{
+			  'field': 'InternalId',
+			  'label': 'InternalId'
+			},{
+			  'field': 'RegisterSituation',
+			  'label': 'RegisterSituation'
+			},{
+			  'field': 'Name',
+			  'label': 'Name'
+			},{
+			  'field': 'ShortCode',
+			  'label': 'ShortCode'
+			},{
+			  'field': 'SPED',
+			  'label': 'SPED'
+			},{
+			  'field': 'AllowEntry',
+			  'label': 'AllowEntry'
+			},{
+			  'field': 'Class',
+			  'label': 'Class'
+			},{
+			  'field': 'TopCode',
+			  'label': 'TopCode'
+			},{
+			  'field': 'CreateDate',
+			  'label': 'CreateDate'
+			},{
+			  'field': 'Accountable',
+			  'label': 'Accountable'
+			},{
+			  'field': 'recordCreatedOn',
+			  'label': 'recordCreatedOn'
+			},{
+			  'field': 'recordModifiedOn',
+			  'label': 'recordModifiedOn'
+			}
+	    ]
+	 }"
+	/>
+	
+
+	<label for="employeeDataContent"> Dados do Colaborador </label><br>
+	<input
+	type="zoom"
+	id="employeeDataContent"
+	name="employeeDataContent"
+	data-zoom="{
+	    'displayKey':'name',
+	    'datasetId':'employeeDataContent',
+	    'maximumSelectionLength':'1',
+	    'placeholder':'Escolha o Colaborador',
+	    'fields':[
+		        {
+		           'field':'companyKey',
+		           'label':'companyKey'
+		        },
+		        {
+		           'field':'branch',
+		           'label':'branch'
+		        },
+		        {
+		           'field':'code',
+		           'label':'code'
+		        },
+		        {
+		           'field':'id',
+		           'label':'id'
+		        },
+		        {
+		           'field':'name',
+		           'label':'name'
+		        },
+		        {
+		           'field':'fullName',
+		           'label':'fullName'
+		        },
+		        {
+		           'field':'badgeNumber',
+		           'label':'badgeNumber'
+		        },
+		        {
+		           'field':'departmentCode',
+		           'label':'departmentCode'
+		        },
+		        {
+		           'field':'departmentInternalId',
+		           'label':'departmentInternalId'
+		        },
+		        {
+		           'field':'departmentDescription',
+		           'label':'departmentDescription'
+		        },
+		        {
+		           'field':'hiringDate',
+		           'label':'hiringDate'
+		        },
+		        {
+		           'field':'demissionDate',
+		           'label':'demissionDate'
+		        },
+		        {
+		           'field':'birthDate',
+		           'label':'birthDate'
+		        },
+		        {
+		           'field':'gender',
+		           'label':'gender'
+		        },
+		        {
+		           'field':'street',
+		           'label':'street'
+		        },
+		        {
+		           'field':'streetNumber',
+		           'label':'streetNumber'
+		        },
+		        {
+		           'field':'complement',
+		           'label':'complement'
+		        },
+		        {
+		           'field':'neighborhood',
+		           'label':'neighborhood'
+		        },
+		        {
+		           'field':'homeState',
+		           'label':'homeState'
+		        },
+		        {
+		           'field':'naturalCity',
+		           'label':'naturalCity'
+		        },
+		        {
+		           'field':'employeeSituation',
+		           'label':'employeeSituation'
+		        },
+		        {
+		           'field':'workCenterCode',
+		           'label':'workCenterCode'
+		        },
+		        {
+		           'field':'city',
+		           'label':'city'
+		        },
+		        {
+		           'field':'zipCode',
+		           'label':'zipCode'
+		        },
+		        {
+		           'field':'areaCode',
+		           'label':'areaCode'
+		        },
+		        {
+		           'field':'telephone',
+		           'label':'telephone'
+		        },
+		        {
+		           'field':'areaCodeMobile',
+		           'label':'areaCodeMobile'
+		        },
+		        {
+		           'field':'mobileNumber',
+		           'label':'mobileNumber'
+		        },
+		        {
+		           'field':'socialIntegProgCode',
+		           'label':'socialIntegProgCode'
+		        },
+		        {
+		           'field':'workCardNumber',
+		           'label':'workCardNumber'
+		        },
+		        {
+		           'field':'workCardSerie',
+		           'label':'workCardSerie'
+		        },
+		        {
+		           'field':'workCardStateIssuing',
+		           'label':'workCardStateIssuing'
+		        },
+		        {
+		           'field':'costCenterCode',
+		           'label':'costCenterCode'
+		        },
+		        {
+		           'field':'costCenterInternalId',
+		           'label':'costCenterInternalId'
+		        },
+		        {
+		           'field':'costCenterDescription',
+		           'label':'costCenterDescription'
+		        },
+		        {
+		           'field':'employeePositionCode',
+		           'label':'employeePositionCode'
+		        },
+		        {
+		           'field':'employeePositionCodeInternalId',
+		           'label':'employeePositionCodeInternalId'
+		        },
+		        {
+		           'field':'employeePositionDescription',
+		           'label':'employeePositionDescription'
+		        },
+		        {
+		           'field':'salaryCategory',
+		           'label':'salaryCategory'
+		        },
+		        {
+		           'field':'workShiftCode',
+		           'label':'workShiftCode'
+		        },
+		        {
+		           'field':'workShiftInternalId',
+		           'label':'workShiftInternalId'
+		        },
+		        {
+		           'field':'workshiftDescription',
+		           'label':'workshiftDescription'
+		        },
+		        {
+		           'field':'workShiftSequence',
+		           'label':'workShiftSequence'
+		        },
+		        {
+		           'field':'initialShiftSequenceDate',
+		           'label':'initialShiftSequenceDate'
+		        },
+		        {
+		           'field':'roleCode',
+		           'label':'roleCode'
+		        },
+		        {
+		           'field':'roleInternalId',
+		           'label':'roleInternalId'
+		        },
+		        {
+		           'field':'roleDescription',
+		           'label':'roleDescription'
+		        },
+		        {
+		           'field':'roleLevel',
+		           'label':'roleLevel'
+		        },
+		        {
+		           'field':'businessUnit',
+		           'label':'businessUnit'
+		        },
+		        {
+		           'field':'clockInCard',
+		           'label':'clockInCard'
+		        },
+		        {
+		           'field':'laborType',
+		           'label':'laborType'
+		        },
+		        {
+		           'field':'unionCode',
+		           'label':'unionCode'
+		        },
+		        {
+		           'field':'workGroupCode',
+		           'label':'workGroupCode'
+		        },
+		        {
+		           'field':'employeeClassCode',
+		           'label':'employeeClassCode'
+		        },
+		        {
+		           'field':'locality',
+		           'label':'locality'
+		        },
+		        {
+		           'field':'allocationPlanCode',
+		           'label':'allocationPlanCode'
+		        },
+		        {
+		           'field':'countryLocalityCode',
+		           'label':'countryLocalityCode'
+		        },
+		        {
+		           'field':'workShiftChangeDate',
+		           'label':'workShiftChangeDate'
+		        },
+		        {
+		           'field':'timeTableCode',
+		           'label':'timeTableCode'
+		        },
+		        {
+		           'field':'carrierCode',
+		           'label':'carrierCode'
+		        },
+		        {
+		           'field':'ruralGroupCode',
+		           'label':'ruralGroupCode'
+		        },
+		        {
+		           'field':'contractEnd',
+		           'label':'contractEnd'
+		        },
+		        {
+		           'field':'employeeType',
+		           'label':'employeeType'
+		        },
+		        {
+		           'field':'privateCitizen',
+		           'label':'privateCitizen'
+		        },
+		        {
+		           'field':'registrationDigit',
+		           'label':'registrationDigit'
+		        },
+		        {
+		           'field':'transferenceAdmissionDate',
+		           'label':'transferenceAdmissionDate'
+		        },
+		        {
+		           'field':'dateOfSalaryChange',
+		           'label':'dateOfSalaryChange'
+		        },
+		        {
+		           'field':'email',
+		           'label':'email'
+		        },
+		        {
+		           'field':'monthlyWorkingHours',
+		           'label':'monthlyWorkingHours'
+		        },
+		        {
+		           'field':'wageTableInternalId',
+		           'label':'wageTableInternalId'
+		        },
+		        {
+		           'field':'typeOfSalaryChange',
+		           'label':'typeOfSalaryChange'
+		        }
+	    ]
+	 }"
+	/>
+	
+
+</form>
+</div>
+</body>
+</html>
